@@ -76,7 +76,7 @@ export default function Dashboard() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((p) => (
+          {projects && projects.map((p) => (
             <div
               key={p.id}
               className="glass-panel rounded-xl border border-white/5 p-5 hover:border-accent-blue/30 transition-all cursor-pointer"
